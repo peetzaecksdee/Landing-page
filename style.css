@@ -1,16 +1,13 @@
 :root {
         --main-text-color: #F9FAF8;
         --secondary-text-color: #E5E7EB;
+        --info-color: #3882F6;
 }
 
 body {
         font-family: Roboto;
         margin: 0;
         padding: 0;
-}
-
-.container {
-        display: flex;
 }
 
 .background {
@@ -28,6 +25,7 @@ body {
 
 .header span {
         font-size: 24px;
+        font-weight: 500;
         color: var(--main-text-color);
 }
 
@@ -74,7 +72,7 @@ body {
 }
 
 .secondary-objects button {
-        background-color: #3882F6;
+        background-color: var(--info-color);
         border: none;
         border-radius: 6px;
         width: 7em;
@@ -85,11 +83,61 @@ body {
 .information-body {
         align-content: center;
         justify-content: center;
+        flex-flow: row, wrap;
+        height: 24em;
 }
 
 .header-text {
-        padding: 32px 0;
+        display: flex;
+        justify-content: center;
+        padding: 1.25em 0;
         font-size: 36px;
         font-weight: 900;
         color: #1f2937;
+}
+
+.info {
+        text-align: center;
+}
+
+.info .image {
+        width: 200px;
+        height: 200px;
+        border: solid 3px var(--info-color);
+        border-radius: 5%;
+        margin: 0 32px;
+}
+
+img {
+        max-width: 100%;
+        max-height: 100%;
+}
+
+.quote-body {
+        display: flex;
+        height: 30em;
+        background-color: var(--secondary-text-color);
+        justify-content: center;
+        align-items: center;
+}
+
+.quote-body div {
+        width: 45%;
+}
+
+.quote {
+        color: #1f2937;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: lighter;
+}
+
+.quote-body div span {
+        float: right;
+        font-weight: bold;
+        font-size: 24px;
+}
+
+.info-box {
+        
 }
