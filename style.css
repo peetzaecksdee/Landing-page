@@ -1,13 +1,13 @@
 :root {
-        --main-text-color: #F9FAF8;
-        --secondary-text-color: #E5E7EB;
-        --info-color: #3882F6;
+    --main-text-color: #f9faf8;
+    --secondary-text-color: #e5e7eb;
+    --info-color: #3882f6;
 }
 
 body {
-        font-family: Roboto;
-        margin: 0;
-        padding: 0;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
 }
 
 .background {
@@ -15,18 +15,19 @@ body {
 }
 
 .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-        margin: auto;
-        width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin: auto;
+    width: 80%;
 }
 
-.header span {
-        font-size: 24px;
-        font-weight: 500;
-        color: var(--main-text-color);
+.header span,
+.info-text span {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--main-text-color);
 }
 
 .header-links {
@@ -36,108 +37,125 @@ body {
 
 .header-links a,
 .secondary-objects button {
-        font-size: 18px;
-        color: var(--secondary-text-color);
-        text-decoration: none;
+    font-size: 18px;
+    color: var(--secondary-text-color);
+    text-decoration: none;
 }
 
 .body,
 .information-body {
-        display: flex;
-        width: 80%;
-        margin: auto;
+    display: flex;
+    width: 80%;
+    margin: auto;
 }
 
 .body {
-        padding: 96px 0;
-        gap: 6em;
-        align-content: center;
-        justify-content: space-between;
+    padding: 96px 0;
+    gap: 6em;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .secondary-objects {
-        flex-wrap: wrap;
-        width: 500px;
+    flex-wrap: wrap;
+    width: 500px;
 }
 
 .secondary-objects span {
-        font-size: 48px;
-        font-weight: 900;
-        color: var(--main-text-color);
-        line-height: 64px;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--main-text-color);
+    line-height: 64px;
 }
 
-.secondary-objects p{
-        color: var(--secondary-text-color);
+.secondary-objects p,
+.info-text p {
+    color: var(--secondary-text-color);
 }
 
 .secondary-objects button {
-        background-color: var(--info-color);
-        border: none;
-        border-radius: 6px;
-        width: 7em;
-        height: 2em;
-        font-weight: 500;
+    background-color: var(--info-color);
+    border: none;
+    border-radius: 6px;
+    width: 7em;
+    height: 2em;
+    font-weight: 500;
 }
 
 .information-body {
-        align-content: center;
-        justify-content: center;
-        flex-flow: row, wrap;
-        height: 24em;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row, wrap;
+    height: 24em;
 }
 
 .header-text {
-        display: flex;
-        justify-content: center;
-        padding: 1.25em 0;
-        font-size: 36px;
-        font-weight: 900;
-        color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 1.25em 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .info {
-        text-align: center;
+    text-align: center;
 }
 
 .info .image {
-        width: 200px;
-        height: 200px;
-        border: solid 3px var(--info-color);
-        border-radius: 5%;
-        margin: 0 32px;
+    width: 200px;
+    height: 200px;
+    border: solid 3px var(--info-color);
+    border-radius: 5%;
+    margin: 0 32px;
 }
 
 img {
-        max-width: 100%;
-        max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .quote-body {
+    display: flex;
+    height: 30em;
+    background-color: var(--secondary-text-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-body div {
+    width: 45%;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote-body div span {
+    float: right;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.info-box {
         display: flex;
-        height: 30em;
-        background-color: var(--secondary-text-color);
+    align-self: center;
+    width: 80%;
+    height: 10em;
+    background-color: var(--info-color);
+    border-radius: 8px;
+    justify-content: space-around;
+}
+
+.info-text {
+        display: flex;
         justify-content: center;
         align-items: center;
 }
 
-.quote-body div {
-        width: 45%;
-}
-
-.quote {
-        color: #1f2937;
-        font-size: 36px;
-        font-style: italic;
-        font-weight: lighter;
-}
-
-.quote-body div span {
-        float: right;
-        font-weight: bold;
-        font-size: 24px;
-}
-
-.info-box {
+.sign-up-button button {
         
 }
