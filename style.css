@@ -2,7 +2,7 @@
   --hero-background: #1f2937;
   --hero-main-text: #f9faf8;
   --secondary-text: #e5e7eb;
-  --button-color: #3882F6;
+  --button-color: #3882f6;
 }
 
 * {
@@ -22,10 +22,11 @@ body {
 
 .hero-background {
   background: var(--hero-background);
+  padding-bottom: 64px;
 }
 
 .hero-main {
-  display: flex; 
+  display: flex;
   padding: 12px;
   justify-content: center;
   align-items: center;
@@ -83,4 +84,41 @@ body {
   border: none;
   border-radius: 8px;
   color: var(--secondary-text);
+}
+
+.container img {
+  border-radius: 8px;
+}
+
+main {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+  width: min-content;
+}
+
+.center {
+  text-align: center;
+}
+
+.information {
+  margin: 48px 0;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--button-color);
+  border-radius: 12px;
 }
