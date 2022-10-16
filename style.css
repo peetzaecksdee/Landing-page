@@ -1,0 +1,86 @@
+:root {
+  --hero-background: #1f2937;
+  --hero-main-text: #f9faf8;
+  --secondary-text: #e5e7eb;
+  --button-color: #3882F6;
+}
+
+* {
+  font-family: Nunito;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Header Part */
+
+.hero-background {
+  background: var(--hero-background);
+}
+
+.hero-main {
+  display: flex; 
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--hero-main-text);
+  font-weight: 600;
+}
+
+.header-links ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
+  color: var(--secondary-text);
+  margin: 12px;
+  gap: 12px;
+}
+
+.hero-body {
+  display: flex;
+  padding: 48px 0;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information-hero {
+  width: 50%;
+  gap: 0;
+}
+
+.hero-text {
+  color: var(--hero-main-text);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-paragraph {
+  color: var(--secondary-text);
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.hero-button {
+  padding: 6px 24px;
+  text-align: center;
+  background: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--secondary-text);
+}
