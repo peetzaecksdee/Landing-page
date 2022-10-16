@@ -87,7 +87,6 @@
 /* Body */
 
 main {
-  margin-bottom: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,4 +185,21 @@ main {
   font-weight: 700;
   border-radius: 6px;
   color: var(--hero-main-text);
+}
+
+/* Footer */
+
+footer {
+  padding: 36px;
+  background: var(--hero-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hero-main-text);
+  font-size: 18px;
+}
+
+footer img {
+  width: 18px;
+  height: 18px;
 }
