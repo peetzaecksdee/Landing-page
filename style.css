@@ -12,12 +12,6 @@
   padding: 0;
 }
 
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
 /* Header Part */
 
 .hero-background {
@@ -90,6 +84,8 @@ body {
   border-radius: 8px;
 }
 
+/* Body */
+
 main {
   margin-bottom: 48px;
   display: flex;
@@ -130,7 +126,6 @@ main {
 
 .quote {
   display: flex;
-  width: 100%;
   background: var(--secondary-text);
   padding: 128px 0;
   justify-content: center;
@@ -153,4 +148,42 @@ main {
   place-self: end;
   font-size: 24px;
   font-weight: 700;
+}
+
+.blue {
+  background: var(--button-color);
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5em;
+}
+
+.signup .container {
+  padding: 3em 6em;
+  border-radius: 8px;
+  width: 60%;
+}
+
+.call-text {
+  font-size: 18px;
+  color: var(--hero-main-text);
+  font-weight: 700;
+}
+
+.signup-information {
+  color: var(--secondary-text);
+}
+
+.signup div button {
+  height: 2.25em;
+  width: 8em;
+  border: 2px solid var(--hero-main-text);
+  background-color: var(--button-color);
+  font-weight: 700;
+  border-radius: 6px;
+  color: var(--hero-main-text);
 }
